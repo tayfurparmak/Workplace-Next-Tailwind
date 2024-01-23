@@ -28,11 +28,13 @@ const AboutSectionTwo = () => {
               <div className="-mx-2 flex flex-end sm:-mx-4 lg:-mx-2 xl:-mx-4">
                 <div className="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
                   <div className="mb-4 sm:mb-8 sm:h-[400px] md:h-auto lg:h-auto xl:h-auto max-w-full">
-                    {/* <Image
-                      src="./assets/images/company.png"
-                      alt="company image"
-                      className="h-full w-full object-cover object-center"
-                    /> */}
+                  <Image
+                    src="/images/company.png"
+                    alt="aboutImage"
+                    className="w-[659px]"
+                    width={661}
+                    height={650}
+                  />
                   </div>
                 </div>
               </div>

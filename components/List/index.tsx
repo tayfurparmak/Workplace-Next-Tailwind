@@ -12,7 +12,7 @@ const ListSection = () => {
             <div style={{ width: '100%', color: 'white', fontSize: '24px', fontFamily: 'Poppins', fontWeight: 400, lineHeight: '40.50px', wordWrap: 'break-word' }}>Our expert guidance and innovative workforce solutions enable faster and smarter decisions for your talent optimization.</div>
           </div>
 
-          <div className="w-full" style={{ marginLeft: 'auto', marginBottom: '80px', marginTop: '80px' }}>
+          <div className="w-full" style={{ marginLeft: '150px', marginBottom: '80px', marginTop: '80px' }}>
         
             <div className="flex items-center" style={{ marginBottom: '10px' }}>
               <div className="text-white font-bold uppercase text-sm px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" style={{ background: 'red' }}>

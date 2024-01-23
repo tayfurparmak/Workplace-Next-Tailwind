@@ -14,12 +14,13 @@ const AboutSection = () => {
             <div className="flex items-center -mx-3 sm:-mx-4">
               <div className="w-full px-3 sm:px-4 xl:w-1/2 relative">
                 <div className="py-3 sm:py-4">
-                  {/* <Image
-                    src="/public/images/company-about.png"
+                  <Image
+                    src="/images/company-about.png"
                     alt="aboutImage"
                     className="w-[659px]"
-                    
-                  /> */}
+                    width={659}
+                    height={550}
+                  />
                 </div>
               </div>
             </div>

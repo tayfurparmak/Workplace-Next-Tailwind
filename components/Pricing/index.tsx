@@ -1,6 +1,7 @@
 // components/Pricing.tsx
 
 import React from 'react';
+import Image from "next/image";
 
 const Pricing = () => {
 
@@ -23,11 +24,13 @@ const Pricing = () => {
               <div className="flex items-center -mx-3 sm:-mx-4">
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="py-3 sm:py-4">
-                    {/* <img
-                      src="./assets/images/phone-app.png"
-                      alt=""
-                      className="w-full rounded-2xl"
-                    /> */}
+                  <Image
+                    src="/images/phone-app.png"
+                    alt="aboutImage"
+                    className="w-[659px]"
+                    width={665}
+                    height={480}
+                  />
                   </div>
                 </div>
               </div>
@@ -46,10 +49,9 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className="-mx-4  flex flex-wrap" style={{ marginTop: '40px' }}>
-          {/* İlk Kart */}
+        <div className="-mx-4  flex flex-wrap " style={{ marginTop: '40px' }}>
           <div className="w-full px-4 md:w-1/2 lg:w-1/4" style={{ border: '6px rgba(235, 235, 240, 0.50) solid' }}>
-            <div className="wow fadeInUp group mb-12" data-wow-delay=".1s">
+            <div className="wow fadeInUp group mb-12 " data-wow-delay=".1s">
               <p className="p-4 text-body-color dark:text-dark-6 lg:mb-9" style={{ fontSize: '20px', fontFamily: 'Popins' }}>
                 As a group, Workplace expands upon the individual offerings of all member companies to create a one-stop-shop for HR Services
               </p>
