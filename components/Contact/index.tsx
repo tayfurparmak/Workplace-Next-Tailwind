@@ -1,10 +1,45 @@
+"use client"
+
 import Facebook from "../Icon/facebook";
 import Instagram from "../Icon/instagram";
 import Linkedin from "../Icon/linkedin";
 import Twitter from "../Icon/twitter";
 import Youtube from "../Icon/youtube";
+import React, { useRef } from 'react';
+import Swal from 'sweetalert2';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const onSubmit = (e: any) => {
+    e.preventDefault();
+    try {
+      Swal.fire({
+        title: 'Success!',
+        text: 'You send is successfull!',
+        icon: 'success',
+        confirmButtonText: 'Back to home',
+      }).then(result => {
+        if (result.isConfirmed) {
+          window.location.href = '/';
+        }
+      });
+    } catch (error) {
+      
+    }
+  };
+
+  const formRef = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_ydnfcyf', 'template_mzeico1', formRef.current, '0GdQwosSH0Z7jz1VE')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <section
       className="relative md:py-[120px]"
@@ -19,33 +54,34 @@ const Contact = () => {
               className="wow fadeInUp shadow-testimonial dark:bg-dark-2 rounded-lg bg-white px-8 py-10 dark:shadow-none sm:px-10 sm:py-12 md:p-[60px] lg:p-10 lg:px-10 lg:py-12 2xl:p-[60px]"
               data-wow-delay=".2s"
             >
-              <form>
-                <div className="mb-[50px]">
+               <form ref={formRef} onSubmit={(e) => { sendEmail(e); onSubmit(e); }}>
+                <div className="p-12 mb-[50px]">
                   <input
                     type="text"
-                    name="fullName"
+                    name="name"
                     placeholder="Full name"
-                    className="dark: w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:text-white"
+                    className="dark: w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:text-black"
                   />
                 </div>
-                <div className="mb-[50px]">
+                <div className=" px-12 mb-[50px]">
                   <input
                     type="email"
                     name="email"
                     placeholder="E-Mail Address"
-                    className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-white dark:text-white"
+                    className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-white dark:text-black"
                   />
                 </div>
-                <div className="mb-[50px]">
+                <div className=" px-12 mb-[50px]">
                   <textarea
                     name="message"
                     rows={1}
                     placeholder="Details"
-                    className="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-white dark:text-white"
+                    className="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color dark:text-black placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-white "
                   ></textarea>
                 </div>
-                <div className="mb-4">
+                <div className="px-12 mb-4">
                   <button
+                
                     type="submit"
                     className="hover:bg-blue-dark inline-flex w-full items-center justify-center rounded-md bg-dark px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out"
                   >
