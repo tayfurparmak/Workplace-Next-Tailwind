@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 
-
 const Header = () => {
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -100,15 +99,10 @@ const Header = () => {
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
                   }`}
-                >
-              
-                </nav>
+                ></nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-             
-          
-                  <ThemeToggler />
-             
+                <ThemeToggler />
               </div>
             </div>
           </div>

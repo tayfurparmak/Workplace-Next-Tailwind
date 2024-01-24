@@ -16,8 +16,7 @@ export default function Home() {
       <Hero />
       <AboutSectionOne />
       <Features /> 
-     
-      <AboutSectionTwo />
+       <AboutSectionTwo />
       <MapList />
       <Pricing />
       <ListSection />
