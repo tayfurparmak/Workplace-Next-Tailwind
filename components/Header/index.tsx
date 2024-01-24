@@ -44,8 +44,8 @@ const Header = () => {
         }`}
       >
         <div className="container">
-          <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 max-w-full px-4 xl:mr-12">
+          <div className="relative  flex items-center justify-center">
+            <div className="align-center px-4 ">
               <Link
                 href="/"
                 className={`header-logo block w-full ${
@@ -55,20 +55,20 @@ const Header = () => {
                 <Image
                   src="/images/logo_1.png"
                   alt="logo"
-                  width={140}
-                  height={30}
-                  className="w-full dark:hidden"
+                  width={286}
+                  height={60}
+                  className="mx-auto  w-[286px] h-[60px] dark:hidden"
                 />
                 <Image
                   src="/images/logo_1.png"
                   alt="logo"
-                  width={140}
-                  height={30}
-                  className="hidden w-full dark:block"
+                  width={286}
+                  height={60}
+                  className="mx-auto hidden w-[286px] h-[60px] dark:block"
                 />
               </Link>
             </div>
-            <div className="flex w-full items-center justify-between px-4">
+            <div className="flex  items-center justify-between px-4">
               <div>
                 <button
                   onClick={navbarToggleHandler}

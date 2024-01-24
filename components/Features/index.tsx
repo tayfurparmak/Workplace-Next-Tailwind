@@ -46,7 +46,7 @@ const FeatureCard = ({ title, value, additionalValue, description }) => {
   return (
     <div className="w-full px-4 md:w-1/2 lg:w-1/3">
       <div className="relative z-10 mb-10 overflow-hidden rounded-xl bg-white px-8 py-10 shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14">
-        <div className="circle-container">
+        <div className="circle-container" style={{ border: '2px solid #CCCCCC', width: '150px', height: '150px', borderRadius: '50%', margin: '0 auto' }}>
           <span className="text-xl font-medium">
             <div className="mb-3 text-xl font-semibold text-dark dark:text-dark xl:text-[42px] xl:leading-[1.21]">
               <span className="title" style={{ textAlign: 'center', color: '#FF4438', fontSize: '22px', fontFamily: 'Poppins', fontWeight: 600, wordWrap: 'break-word' }}>{title}</span>

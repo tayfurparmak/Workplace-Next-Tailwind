@@ -57,9 +57,10 @@ const Pricing = () => {
               className="border-gray-500 ml-2 max-w-full border-2 px-4 md:w-1/2 lg:w-1/4"
             >
               <div className="wow fadeInUp group mb-12" data-wow-delay=".1s">
-                <p className="dark:text-dark-6 font-Poppins p-4 text-lg text-body-color lg:mb-9">
+                <p className="p-6 ml-8 mt-4 text-zinc-800 w-[244px] font-['Poppins'] text-xl font-normal leading-[34.50px]">
                   {text}
                 </p>
+              
               </div>
             </div>
           ))}
