@@ -6,20 +6,6 @@ const AboutSection = () => {
     <section className="overflow-hidden bg-white pt-20 pb-12 dark:bg-dark lg:pt-[120px] lg:pb-[90px]">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <div className="relative w-full px-4 lg:w-6/12">
-          <svg
-            className="absolute top-20 left-20"
-            width="106"
-            height="79"
-            viewBox="0 0 106 79"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M106 0H13.8619H0V13.7044V79H13.8619V13.7044H106V0Z"
-              fill="#FF4438"
-            />
-          </svg>
-
           <div className="-mx-3 flex items-center sm:-mx-4">
             <Image
               src="/images/company-about.png"

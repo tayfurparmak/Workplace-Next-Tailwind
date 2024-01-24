@@ -13,35 +13,9 @@ const MapList = () => {
         <div className=" bg-gray-800 relative z-10 rounded-xl bg-opacity-75 px-16 py-10 shadow-lg backdrop-blur-md max-sm:px-8">
           <div className="mb-[150px]  flex flex-row items-center">
             <p className="w-full break-words text-4xl font-bold leading-10 text-white">
-              <svg
-                width="59"
-                height="45"
-                viewBox="0 0 59 45"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  id="Vector"
-                  d="M58.5857 0H7.66142H0V7.66142V44.1647H7.66142V7.66142H58.5857V0Z"
-                  fill="#FF4438"
-                />
-              </svg>
               Workplace
               <br />
               Footprint
-              <svg
-                width="42"
-                height="45"
-                viewBox="0 0 42 45"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  id="Vector"
-                  d="M33.7488 0V36.5033H0V44.1647H33.7488H41.4102V36.5033V0H33.7488Z"
-                  fill="#FFC600"
-                />
-              </svg>
             </p>
             <span className="text-gray-300 text-2xl text-white">
               Workplace Serves Over 1.000 clients spread across its member
