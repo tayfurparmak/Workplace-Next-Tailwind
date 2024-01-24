@@ -26,8 +26,8 @@ const Pricing = () => {
 
         <div className="container mx-auto">
           <div className="-mx-4 flex flex-wrap items-center justify-between">
-            <div className="w-full px-4 lg:w-6/12">
-              <div className="py-3 sm:py-4">
+            <div className="w-full px-4 lg:w-6/12 relative">
+              <div className="py-3 sm:py-4 relative">
                 <Image
                   src="/images/phone-app.png"
                   alt="aboutImage"
@@ -35,6 +35,7 @@ const Pricing = () => {
                   width={665}
                   height={480}
                 />
+                <div className="absolute top-0 left-0 w-[550px] h-[450px] border-t-[16px] border-l-[16px]  border-[#FF4438] pointer-events-none"></div>
               </div>
             </div>
 
@@ -54,13 +55,24 @@ const Pricing = () => {
           {pricingItems.map((text, index) => (
             <div
               key={index}
-              className="border-gray-500 ml-2 max-w-full border-2 px-4 md:w-1/2 lg:w-1/4"
+              className="border-gray-500 ml-2 max-w-full border-2 px-4 md:w-1/2 lg:w-1/4 relative"
             >
               <div className="wow fadeInUp group mb-12" data-wow-delay=".1s">
                 <p className="p-6 ml-8 mt-4 text-zinc-800 w-[244px] font-['Poppins'] text-xl font-normal leading-[34.50px]">
                   {text}
                 </p>
-              
+                {index === 0 && (
+                  <div className="absolute top-0 left-0 w-[75px] h-[75px] border-t-[12px] border-l-[12px] border-[#FF4438]"></div>
+                )}
+                  {index === 1 && (
+                  <div className="absolute bottom-0 right-0 w-[75px] h-[75px] border-b-[12px] border-r-[12px] border-[#e4e14d]"></div>
+                )}
+                  {index === 2 && (
+                  <div className="absolute top-0 left-0 w-[75px] h-[75px] border-t-[12px] border-l-[12px] border-[#FF4438]"></div>
+                )}
+                     {index === 3 && (
+                  <div className="absolute bottom-0 right-0 w-[75px] h-[75px] border-b-[12px] border-r-[12px] border-[#e4e14d]"></div>
+                )}
               </div>
             </div>
           ))}

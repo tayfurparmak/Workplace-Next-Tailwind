@@ -2,6 +2,8 @@
 import Image from "next/image";
 
 import React from "react";
+import RedSvg from "./RedImage";
+import YellowSvg from "./YellowImage";
 
 const MapList = () => {
   return (
@@ -11,11 +13,17 @@ const MapList = () => {
           <Image src="/images/bg-map.png" alt="background image" fill />
         </div>
         <div className=" bg-gray-800 relative z-10 rounded-xl bg-opacity-75 px-16 py-10 shadow-lg backdrop-blur-md max-sm:px-8">
-          <div className="mb-[150px]  flex flex-row items-center">
+          <div className="mb-[150px] relative flex flex-row items-center">
+      
             <p className="w-full break-words text-4xl font-bold leading-10 text-white">
+              <span className="absolute top-[-20px] left-[-30px]">  <RedSvg/> 
+            </span>
               Workplace
               <br />
               Footprint
+              <span className="absolute  bottom-[-20px]  left-[150px]">
+              <YellowSvg  />
+         </span>
             </p>
             <span className="text-gray-300 text-2xl text-white">
               Workplace Serves Over 1.000 clients spread across its member

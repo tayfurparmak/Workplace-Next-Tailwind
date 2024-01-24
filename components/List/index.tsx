@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import RedSvg from "./RedImage";
+import YellowSvg from "./YellowImage";
 
 const ListSection = () => {
   return (
@@ -18,10 +20,16 @@ const ListSection = () => {
         </div>
         <div className="container relative z-10 mx-auto flex justify-between gap-4 bg-cover bg-center p-10">
           <div className="mt-10 flex w-1/2 flex-col items-center ">
-            <div className="font-poppins leading-14 mb-6 text-5xl font-bold text-white">
+       
+            <div className="relative font-poppins leading-14 mb-6 text-5xl font-bold text-white">
+            <span className="absolute top-[-20px] left-[-30px]">  <RedSvg/> 
+      </span>
               Workplace
               <br />
               Solutions
+              <span className="absolute  bottom-[-20px]  right-0">
+         <YellowSvg  />
+         </span>
             </div>
             <div className="w-[343px] font-['Poppins'] text-2xl font-normal leading-10 text-white">
               Our expert guidance and innovative workforce solutions enable

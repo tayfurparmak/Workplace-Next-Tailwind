@@ -1,4 +1,5 @@
 import Image from "next/image";
+import YellowSvg from "./AboutTwoYellowImage";
 
 const AboutSectionTwo = () => {
   return (
@@ -33,14 +34,16 @@ const AboutSectionTwo = () => {
           </div>
 
           <div className="w-full px-4 lg:w-1/2">
-            <div className=" flex-end flex sm:-mx-4 ">
+            <div className=" relative flex-end flex sm:-mx-4 ">
               <Image
                 src="/images/company.png"
                 alt="aboutImage"
-                className="h-[650px] w-[659px] shrink-0"
+                className="h-[650px] w-[659px]  relative z-1"
                 width={661}
                 height={650}
               />
+               <div className="absolute bottom-0 right-3 w-[600px] h-[620px] border-b-[18px] border-r-[18px] border-[#FFC600] pointer-events-none"></div>
+           
             </div>
           </div>
         </div>

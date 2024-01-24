@@ -1,4 +1,6 @@
 import Image from "next/image";
+import YellowSvg from "./yellowImage";
+import RedSvg from "./redImage";
 
 const Hero = () => {
   return (
@@ -8,14 +10,19 @@ const Hero = () => {
           <div className="absolute inset-0">
             <Image src="/images/hero-people.png" alt="background image" fill />
           </div>
-          <div className="relative z-10 flex h-full flex-col items-center justify-center">
-            <h1 className="text-center text-8xl font-bold  text-white">
-              We provide <br />
-              the best talent solutions
-              <br />
-              for your organization{" "}
-            </h1>
-          </div>
+          <div className="relative  flex h-full flex-col items-center justify-center">
+       <h1 className="text-center text-8xl font-bold text-white">
+        <span className="absolute bottom-80 right-[350px]">
+        <YellowSvg  />
+       </span>
+        We provide <br />
+        the best talent solutions
+        <br />
+        for your organization
+        <span className="absolute top-[350px] left-[500px]">  <RedSvg/> 
+      </span>
+      </h1>
+    </div>
         </div>
 
         <div className="absolute top-0 right-0 z-[-1] opacity-30 lg:opacity-100">
