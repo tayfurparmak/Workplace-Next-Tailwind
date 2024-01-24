@@ -5,8 +5,8 @@ import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import ListSection from "@/components/List";
 import Pricing from "@/components/Pricing";
-import Testimonials from "@/components/Testimonials";
 import { Inter } from "@next/font/google";
+import MapList from "@/components/MapList";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,10 +14,11 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Features /> 
       <AboutSectionOne />
+      <Features /> 
+     
       <AboutSectionTwo />
-      <Testimonials />
+      <MapList />
       <Pricing />
       <ListSection />
       <Contact />
